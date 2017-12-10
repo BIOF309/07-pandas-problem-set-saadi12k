@@ -1,0 +1,7 @@
+#Use numpy and pandas to generate a table centered around dates with 4 columns
+import pandas as pd
+import numpy as np
+dates = pd.date_range('20171201', periods=6)
+df = pd.DataFrame(np.random.randn(6,4), index=dates, columns=list('ABCD'))
+print(df)
+df[0:1]
